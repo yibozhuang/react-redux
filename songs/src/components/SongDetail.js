@@ -1,5 +1,5 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
 
 const SongDetail = ({ song }) => {
   if (!song) {
@@ -17,7 +17,7 @@ const SongDetail = ({ song }) => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return { song: state.selectedSong };
 };
 
